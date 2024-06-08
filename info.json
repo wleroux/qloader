@@ -1,0 +1,9 @@
+{
+	"name": "qloader",
+	"version": "1.0.0",
+	"title": "qloader",
+	"author": "wleroux",
+	"dependencies": ["base >= 1.1"],
+	"description": "Distributes items to all loaders at a distance",
+	"factorio_version": "1.1"
+}
