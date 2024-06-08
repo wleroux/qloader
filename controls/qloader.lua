@@ -78,7 +78,7 @@ local function distributeQLoader(loader)
 	return false
 end
 local function processQloaders()
-	if (not global.qloaders) then return end
+    if (not global.qloaders) then return end
 	for i, output_loader in ipairs(global.qloaders.output_loaders) do
 		if (output_loader and output_loader.valid) then
 			if (not distributeQLoader(output_loader)) then
@@ -93,15 +93,15 @@ end
 
 initializeQLoaders()
 
-script.on_event(defines.events.on_built_entity, function (ev) updateQLoader(ev.created_entity) end)
-script.on_event(defines.events.on_robot_built_entity, function (ev) updateQLoader(ev.created_entity) end)
-script.on_event(defines.events.on_entity_cloned, function (ev) updateQLoader(ev.destination) end)
-script.on_event(defines.events.on_gui_closed, function (ev) updateQLoader(ev.entity) end)
-script.on_event(defines.events.on_entity_settings_pasted, function (ev) updateQLoader(ev.destination) end)
-script.on_event(defines.events.on_player_rotated_entity, function(ev) updateQLoader(ev.entity) end)
-script.on_event(defines.events.on_entity_destroyed, function (ev) deleteQLoader(ev.entity) end)
-script.on_event(defines.events.on_player_mined_entity, function (ev) deleteQLoader(ev.entity) end)
-script.on_event(defines.events.on_robot_mined_entity, function (ev) deleteQLoader(ev.entity) end)
-script.on_event(defines.events.script_raised_destroy, function (ev) deleteQLoader(ev.entity) end)
-script.on_event(defines.events.on_entity_died, function (ev) deleteQLoader(ev.entity) end)
-script.on_event(defines.events.on_tick, processQloaders)
+QLoadersEvents.on_event(defines.events.on_built_entity, function (ev) updateQLoader(ev.created_entity) end)
+QLoadersEvents.on_event(defines.events.on_robot_built_entity, function (ev) updateQLoader(ev.created_entity) end)
+QLoadersEvents.on_event(defines.events.on_entity_cloned, function (ev) updateQLoader(ev.destination) end)
+QLoadersEvents.on_event(defines.events.on_gui_closed, function (ev) updateQLoader(ev.entity) end)
+QLoadersEvents.on_event(defines.events.on_entity_settings_pasted, function (ev) updateQLoader(ev.destination) end)
+QLoadersEvents.on_event(defines.events.on_player_rotated_entity, function(ev) updateQLoader(ev.entity) end)
+QLoadersEvents.on_event(defines.events.on_entity_destroyed, function (ev) deleteQLoader(ev.entity) end)
+QLoadersEvents.on_event(defines.events.on_player_mined_entity, function (ev) deleteQLoader(ev.entity) end)
+QLoadersEvents.on_event(defines.events.on_robot_mined_entity, function (ev) deleteQLoader(ev.entity) end)
+QLoadersEvents.on_event(defines.events.script_raised_destroy, function (ev) deleteQLoader(ev.entity) end)
+QLoadersEvents.on_event(defines.events.on_entity_died, function (ev) deleteQLoader(ev.entity) end)
+QLoadersEvents.on_event(defines.events.on_tick, processQloaders)

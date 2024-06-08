@@ -1,0 +1,99 @@
+data:extend(
+{
+    {
+        type="recipe",
+        name="qpipe-water",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-water",
+    	result_count=1
+    },
+    {
+        type="recipe",
+        name="qpipe-crude-oil",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-crude-oil",
+    	result_count=1
+    },
+    {
+        type="recipe",
+        name="qpipe-sulfuric-acid",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-sulfuric-acid",
+    	result_count=1
+    },
+    {
+        type="recipe",
+        name="qpipe-heavy-oil",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-heavy-oil",
+    	result_count=1
+    },
+    {
+        type="recipe",
+        name="qpipe-light-oil",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-light-oil",
+    	result_count=1
+    },
+    {
+        type="recipe",
+        name="qpipe-petroleum-gas",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-petroleum-gas",
+    	result_count=1
+    },
+    {
+        type="recipe",
+        name="qpipe-lubricant",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-lubricant",
+    	result_count=1
+    },
+    {
+        type="recipe",
+        name="qpipe-steam",
+        category="crafting",
+        enabled=false,
+        energy_required=6,
+    	ingredients={
+            {"pipe-to-ground", 10}
+        },
+    	result="qpipe-steam",
+    	result_count=1
+    }
+})
